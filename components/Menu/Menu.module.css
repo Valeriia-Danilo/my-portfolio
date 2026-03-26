@@ -1,0 +1,109 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 90;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+
+  background: #0b0b12;
+  border-left: 1px solid rgba(168, 85, 247, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow:
+    4px 0 20px rgba(0, 0, 0, 0.5),
+    4px 0 20px rgba(168, 85, 247, 0.4);
+  padding: 80px 24px 40px;
+  transition: 0.3s;
+  z-index: 100;
+}
+
+.open {
+  left: 0;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: #a855f7;
+  transition: 0.3s;
+}
+
+.closeBtn:hover {
+  color: #c084fc;
+  transform: rotate(90deg);
+  filter: drop-shadow(0 0 8px #c084fc);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.nav a {
+  display: inline-block;
+  position: relative;
+  color: #e6e6ff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #c084fc;
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.8);
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #a855f7;
+  transition: 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials a {
+  font-size: 22px;
+  color: #a855f7;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #c084fc;
+  filter: drop-shadow(0 0 6px #c084fc);
+}
