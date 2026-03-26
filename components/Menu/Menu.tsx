@@ -54,14 +54,6 @@ export default function Menu({ isOpen, onClose }: Props) {
           </Link>
 
           <Link
-            href="/skills"
-            onClick={onClose}
-            className={clsx(pathname === '/skills' && css.active)}
-          >
-            Skills
-          </Link>
-
-          <Link
             href="/contact"
             onClick={onClose}
             className={clsx(pathname === '/contact' && css.active)}
@@ -70,7 +62,6 @@ export default function Menu({ isOpen, onClose }: Props) {
           </Link>
         </nav>
 
-        {/* socials */}
         <div className={css.socials}>
           <a href="#" target="_blank" rel="noopener noreferrer">
             <FaTelegram />
