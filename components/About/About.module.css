@@ -1,0 +1,122 @@
+.about {
+  width: 100%;
+  padding: 100px 20px;
+  background: #0b0b12;
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.title span {
+  color: #a855f7;
+  text-shadow: 0 0 15px #a855f7;
+}
+
+.text p {
+  color: #b3b3c6;
+  text-align: justify;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* SKILLS */
+.skillsTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  margin-bottom: 20px;
+}
+
+.skills p {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #a855f7;
+  color: #c084fc;
+  font-size: 13px;
+  transition: 0.3s;
+  margin: 0;
+}
+
+.skills p:hover {
+  background: #a855f7;
+  color: white;
+  box-shadow: 0 0 10px #a855f7;
+}
+
+.codeBlock {
+  background: rgba(20, 10, 40, 0.6);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+}
+
+.codeBlock pre {
+  color: #c084fc;
+  font-family: monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@media (min-width: 768px) {
+  .codeBlock {
+    max-width: 450px;
+  }
+
+  .skills {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+
+  .skillsTitle {
+    font-size: 20px;
+  }
+
+  .skills p {
+    font-size: 16px;
+  }
+
+  .text {
+    max-width: 600px;
+  }
+
+  .codeBlock {
+    max-width: 450px;
+  }
+
+  .text p {
+    font-size: 18px;
+  }
+  .codeBlock pre {
+    font-size: 16px;
+  }
+}

@@ -4,9 +4,12 @@ import Link from 'next/link';
 import css from './Header.module.css';
 import { useState } from 'react';
 import Menu from '../Menu/Menu';
+import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
 
 const Header = () => {
   const [burgerOpen, setBurgerOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <>
@@ -25,12 +28,27 @@ const Header = () => {
           </button>
 
           <nav className={css.nav}>
-            <Link href="/" className={css.active}>
+            <Link href="/" className={clsx(pathname === '/' && css.active)}>
               Home
             </Link>
-            <Link href="/about">About</Link>
-            <Link href="/projects">Projects</Link>
-            <Link href="/contact">Contact</Link>
+            <Link
+              href="/about"
+              className={clsx(pathname === '/about' && css.active)}
+            >
+              About
+            </Link>
+            <Link
+              href="/projects"
+              className={clsx(pathname === '/projects' && css.active)}
+            >
+              Projects
+            </Link>
+            <Link
+              href="/contact"
+              className={clsx(pathname === '/contact' && css.active)}
+            >
+              Contact
+            </Link>
           </nav>
         </div>
       </header>
