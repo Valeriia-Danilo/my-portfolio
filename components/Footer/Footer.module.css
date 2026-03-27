@@ -1,0 +1,21 @@
+.footer {
+  padding: 40px 0;
+  background: #0b0b12;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials a {
+  font-size: 22px;
+  color: #a855f7;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #c084fc;
+  filter: drop-shadow(0 0 6px #c084fc);
+}

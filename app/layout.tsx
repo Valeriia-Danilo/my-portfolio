@@ -3,7 +3,6 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
-import Container from '@/components/Container/Container';
 
 export const metadata: Metadata = {
   title: 'Valeria Danilo - Frontend Developer',
@@ -24,12 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.variable}>
+      <body className={`${poppins.variable} page`}>
         <Header />
-        <Container>
-          <main>{children}</main>
-          <Footer />
-        </Container>
+        <main className="main">{children}</main>
+        <Footer />
       </body>
     </html>
   );

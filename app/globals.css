@@ -7,13 +7,26 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0b0b12;
     --foreground: #ededed;
   }
 }
 
 body {
-  background: #0a0f14;
+  background: #0b0b12;
   color: white;
   font-family: var(--font-poppins), Arial, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

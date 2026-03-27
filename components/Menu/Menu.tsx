@@ -17,13 +17,11 @@ export default function Menu({ isOpen, onClose }: Props) {
 
   return (
     <>
-      {/* overlay */}
       <div
         className={clsx(css.overlay, isOpen && css.show)}
         onClick={onClose}
       />
 
-      {/* menu */}
       <aside className={clsx(css.menu, isOpen && css.open)}>
         <button className={css.closeBtn} onClick={onClose}>
           <IoClose />
