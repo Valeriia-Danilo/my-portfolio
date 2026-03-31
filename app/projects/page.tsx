@@ -1,5 +1,12 @@
-const Projects = () => {
-  return <div>Projects</div>;
+import ProjectsList from '@/components/ProjecstList/ProjectsList';
+import data from '@/public/data/data.json';
+
+const ProjectsPage = () => {
+  return (
+    <div>
+      <ProjectsList projects={data} />
+    </div>
+  );
 };
 
-export default Projects;
+export default ProjectsPage;
