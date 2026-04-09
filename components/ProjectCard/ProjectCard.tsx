@@ -1,5 +1,6 @@
 import { Project } from '@/types/types';
 import Image from 'next/image';
+import css from './ProjectCard.module.css';
 
 type Props = {
   project: Project;
@@ -7,7 +8,7 @@ type Props = {
 
 const ProjectCard = ({ project }: Props) => {
   return (
-    <li>
+    <div className={css.card}>
       <Image src={project.image} alt={project.title} width={400} height={250} />
       <h3>{project.title}</h3>
       <ul>
@@ -23,7 +24,7 @@ const ProjectCard = ({ project }: Props) => {
         <a href={project.live}></a>
         <a href={project.github}></a>
       </div>
-    </li>
+    </div>
   );
 };
 

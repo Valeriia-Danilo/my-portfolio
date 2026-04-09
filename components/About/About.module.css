@@ -3,6 +3,8 @@
   padding: 100px 20px;
   background: #0b0b12;
   color: white;
+  padding-top: 60px;
+  min-height: 73vh;
 }
 
 .container {
@@ -76,6 +78,11 @@
 }
 
 @media (min-width: 768px) {
+  .about {
+    padding-top: 80px;
+    min-height: 80vh;
+  }
+
   .codeBlock {
     max-width: 450px;
   }
@@ -86,6 +93,10 @@
 }
 
 @media (min-width: 1440px) {
+  .about {
+    padding-top: 160px;
+  }
+
   .container {
     flex-direction: row;
     align-items: center;

@@ -5,6 +5,8 @@
   background: #0b0b12;
   color: white;
   gap: 30px;
+  min-height: 83vh;
+  padding-top: 60px;
 }
 
 .container {
@@ -122,6 +124,10 @@
 }
 
 @media (min-width: 768px) {
+  .hero {
+    min-height: 80vh;
+  }
+
   .image {
     width: 300px;
     height: 300px;
