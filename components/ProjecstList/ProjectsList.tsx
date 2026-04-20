@@ -3,13 +3,19 @@
 import ProjectCard from '../ProjectCard/ProjectCard';
 import { Project } from '@/types/types';
 import css from './ProgectList.module.css';
-import { EffectCoverflow, Pagination, Mousewheel } from 'swiper/modules';
+import {
+  EffectCoverflow,
+  Pagination,
+  Mousewheel,
+  Keyboard,
+} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-coverflow';
+import 'swiper/css/navigation';
 
 type Props = {
   projects: Project[];
@@ -17,10 +23,13 @@ type Props = {
 
 const ProjectsList = ({ projects }: Props) => {
   return (
-    <div className={css.swiperWrapper}>
+    <section className={css.projects}>
+      <h2 className={css.projectsTitle}>My Projects</h2>
       <Swiper
-        modules={[EffectCoverflow, Pagination, Mousewheel]}
+        modules={[EffectCoverflow, Pagination, Mousewheel, Keyboard]}
         centeredSlides={true}
+        spaceBetween={20}
+        slidesPerView="auto"
         loop={true}
         speed={600}
         navigation
@@ -30,8 +39,8 @@ const ProjectsList = ({ projects }: Props) => {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 350,
-          modifier: 1,
+          depth: 150,
+          modifier: 2,
           slideShadows: true,
         }}
         mousewheel={{
@@ -42,23 +51,8 @@ const ProjectsList = ({ projects }: Props) => {
           clickable: true,
         }}
         scrollbar={{ draggable: true }}
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          360: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          1440: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
+        keyboard={{
+          enabled: true,
         }}
       >
         {projects.map((project) => (
@@ -67,7 +61,7 @@ const ProjectsList = ({ projects }: Props) => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
 };
 
