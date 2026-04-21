@@ -1,6 +1,8 @@
 import { Project } from '@/types/types';
 import Image from 'next/image';
 import css from './ProjectCard.module.css';
+import { FaHeart } from 'react-icons/fa';
+import Link from 'next/link';
 
 type Props = {
   project: Project;
@@ -9,8 +11,15 @@ type Props = {
 const ProjectCard = ({ project }: Props) => {
   return (
     <div className={css.card}>
-      <Image src={project.image} alt={project.title} width={400} height={250} />
+      <Image
+        src={project.image}
+        alt={project.title}
+        className={css.image}
+        width={400}
+        height={250}
+      />
       <h3>{project.title}</h3>
+      <p>{project.description}</p>
       <ul>
         {project.tags.map((tag, i) => {
           return (
@@ -21,9 +30,10 @@ const ProjectCard = ({ project }: Props) => {
         })}
       </ul>
       <div>
-        <a href={project.live}></a>
-        <a href={project.github}></a>
+        <FaHeart />
+        {project.likes}
       </div>
+      <Link href={`/projects/${project.id}`}>Details</Link>
     </div>
   );
 };

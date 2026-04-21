@@ -13,17 +13,15 @@
 }
 
 .projects :global(.swiper-coverflow) {
-  height: 550px;
+  height: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .projects :global(.swiper-slide) {
-  width: 350px;
-  max-height: 400px;
+  width: 320px;
+  max-height: 350px;
 }
-
-/* .projects :global(.swiper-coverflow) {
-  height: 600px;
-} */
 
 .projects :global(.swiper-button-next),
 .projects :global(.swiper-button-prev) {
@@ -31,7 +29,7 @@
 }
 
 .projects :global(.swiper-pagination) {
-  --swiper-pagination-bottom: 16px;
+  --swiper-pagination-bottom: 6px;
 }
 
 .projects :global(.swiper-pagination-bullet) {
@@ -60,11 +58,24 @@
   .projects {
     min-height: 80vh;
   }
+
+  .projects :global(.swiper-coverflow) {
+    height: 650px;
+  }
+
+  .projects :global(.swiper-slide) {
+    width: 350px;
+    max-height: 400px;
+  }
 }
 
 @media (min-width: 1440px) {
   .projects {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  .projects :global(.swiper-coverflow) {
+    height: 650px;
   }
 }

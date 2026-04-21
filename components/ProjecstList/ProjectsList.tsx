@@ -39,7 +39,7 @@ const ProjectsList = ({ projects }: Props) => {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 150,
+          depth: 80,
           modifier: 2,
           slideShadows: true,
         }}
@@ -53,6 +53,17 @@ const ProjectsList = ({ projects }: Props) => {
         scrollbar={{ draggable: true }}
         keyboard={{
           enabled: true,
+        }}
+        breakpoints={{
+          0: {
+            spaceBetween: 80,
+          },
+          768: {
+            spaceBetween: 10,
+          },
+          1440: {
+            spaceBetween: 10,
+          },
         }}
       >
         {projects.map((project) => (

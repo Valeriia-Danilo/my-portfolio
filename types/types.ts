@@ -6,4 +6,5 @@ export type Project = {
   tags: string[];
   live: string;
   github: string;
+  likes: number;
 };
