@@ -39,7 +39,7 @@ const ProjectsList = ({ projects }: Props) => {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 80,
+          depth: 150,
           modifier: 2,
           slideShadows: true,
         }}
@@ -59,10 +59,10 @@ const ProjectsList = ({ projects }: Props) => {
             spaceBetween: 80,
           },
           768: {
-            spaceBetween: 10,
+            spaceBetween: 20,
           },
           1440: {
-            spaceBetween: 10,
+            spaceBetween: 20,
           },
         }}
       >

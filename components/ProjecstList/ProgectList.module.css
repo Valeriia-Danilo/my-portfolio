@@ -13,14 +13,14 @@
 }
 
 .projects :global(.swiper-coverflow) {
-  height: 600px;
+  height: 650px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .projects :global(.swiper-slide) {
-  width: 320px;
-  max-height: 350px;
+  width: 300px;
+  height: 320px;
 }
 
 .projects :global(.swiper-button-next),

@@ -18,22 +18,26 @@ const ProjectCard = ({ project }: Props) => {
         width={400}
         height={250}
       />
-      <h3>{project.title}</h3>
-      <p>{project.description}</p>
-      <ul>
+      <h3 className={css.title}>{project.title}</h3>
+      <p className={css.description}>{project.description}</p>
+      <ul className={css.stackContainer}>
         {project.tags.map((tag, i) => {
           return (
-            <li key={i}>
+            <li key={i} className={css.stack}>
               <p>{tag}</p>
             </li>
           );
         })}
       </ul>
-      <div>
-        <FaHeart />
-        {project.likes}
+      <div className={css.detailsContainer}>
+        <div className={css.likes}>
+          <FaHeart />
+          {project.likes}
+        </div>
+        <Link href={`/projects/${project.id}`} className={css.detailsButton}>
+          Details
+        </Link>
       </div>
-      <Link href={`/projects/${project.id}`}>Details</Link>
     </div>
   );
 };
