@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "My project 1",
     "description": "A complete e-commerce platform with shopping cart, payment, and admin dashboard features.",
     "image": "https://images.squarespace-cdn.com/content/v1/53ef83c7e4b0b26ce6e2698b/1463577779866-Y7FWFJNNPF595N7A8FFX/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWtTHP8HrI779dw9Z2fLXflvut3m2EIRkoOCEuUXL6Bqkp2ryTI0HqTOaaUohrI8PIPmjpLQLvkQII5A3XnB_3HUI5wLn-MlTcg6G588ozDG0KMshLAGzx4R3EDFOm1kBS/image-asset.jpeg?format=1000w",
@@ -10,7 +10,7 @@
     "likes": 10
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "My project 2",
     "description": "An interactive portfolio website with animations and responsive design.",
     "image": "https://images.squarespace-cdn.com/content/v1/53ef83c7e4b0b26ce6e2698b/1463577779866-Y7FWFJNNPF595N7A8FFX/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWtTHP8HrI779dw9Z2fLXflvut3m2EIRkoOCEuUXL6Bqkp2ryTI0HqTOaaUohrI8PIPmjpLQLvkQII5A3XnB_3HUI5wLn-MlTcg6G588ozDG0KMshLAGzx4R3EDFOm1kBS/image-asset.jpeg?format=1000w",
@@ -20,7 +20,7 @@
     "likes": 10
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "My project 3",
     "description": "A task management app with drag-and-drop and real-time collaboration.",
     "image": "https://images.squarespace-cdn.com/content/v1/53ef83c7e4b0b26ce6e2698b/1463577779866-Y7FWFJNNPF595N7A8FFX/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWtTHP8HrI779dw9Z2fLXflvut3m2EIRkoOCEuUXL6Bqkp2ryTI0HqTOaaUohrI8PIPmjpLQLvkQII5A3XnB_3HUI5wLn-MlTcg6G588ozDG0KMshLAGzx4R3EDFOm1kBS/image-asset.jpeg?format=1000w",
@@ -31,7 +31,7 @@
   },
 
   {
-    "id": 4,
+    "id": "4",
     "title": "My project 4",
     "description": "A task management app with drag-and-drop and real-time collaboration.",
     "image": "https://images.squarespace-cdn.com/content/v1/53ef83c7e4b0b26ce6e2698b/1463577779866-Y7FWFJNNPF595N7A8FFX/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWtTHP8HrI779dw9Z2fLXflvut3m2EIRkoOCEuUXL6Bqkp2ryTI0HqTOaaUohrI8PIPmjpLQLvkQII5A3XnB_3HUI5wLn-MlTcg6G588ozDG0KMshLAGzx4R3EDFOm1kBS/image-asset.jpeg?format=1000w",
@@ -42,7 +42,7 @@
   },
 
   {
-    "id": 5,
+    "id": "5",
     "title": "My project 5",
     "description": "A task management app with drag-and-drop and real-time collaboration.",
     "image": "https://images.squarespace-cdn.com/content/v1/53ef83c7e4b0b26ce6e2698b/1463577779866-Y7FWFJNNPF595N7A8FFX/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWtTHP8HrI779dw9Z2fLXflvut3m2EIRkoOCEuUXL6Bqkp2ryTI0HqTOaaUohrI8PIPmjpLQLvkQII5A3XnB_3HUI5wLn-MlTcg6G588ozDG0KMshLAGzx4R3EDFOm1kBS/image-asset.jpeg?format=1000w",
@@ -53,7 +53,7 @@
   },
 
   {
-    "id": 6,
+    "id": "6",
     "title": "My project 6",
     "description": "A task management app with drag-and-drop and real-time collaboration.",
     "image": "https://images.squarespace-cdn.com/content/v1/53ef83c7e4b0b26ce6e2698b/1463577779866-Y7FWFJNNPF595N7A8FFX/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWtTHP8HrI779dw9Z2fLXflvut3m2EIRkoOCEuUXL6Bqkp2ryTI0HqTOaaUohrI8PIPmjpLQLvkQII5A3XnB_3HUI5wLn-MlTcg6G588ozDG0KMshLAGzx4R3EDFOm1kBS/image-asset.jpeg?format=1000w",
@@ -64,7 +64,7 @@
   },
 
   {
-    "id": 7,
+    "id": "7",
     "title": "My project 7",
     "description": "A task management app with drag-and-drop and real-time collaboration.",
     "image": "https://images.squarespace-cdn.com/content/v1/53ef83c7e4b0b26ce6e2698b/1463577779866-Y7FWFJNNPF595N7A8FFX/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWtTHP8HrI779dw9Z2fLXflvut3m2EIRkoOCEuUXL6Bqkp2ryTI0HqTOaaUohrI8PIPmjpLQLvkQII5A3XnB_3HUI5wLn-MlTcg6G588ozDG0KMshLAGzx4R3EDFOm1kBS/image-asset.jpeg?format=1000w",

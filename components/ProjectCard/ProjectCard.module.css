@@ -7,7 +7,6 @@
   color: #e6e6ff;
   display: flex;
   flex-direction: column;
-  gap: 15px;
   box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
   transition:
     transform 0.3s ease,
@@ -25,34 +24,21 @@
   object-fit: cover;
   border-radius: 12px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .title {
   color: #a855f7;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .description {
   color: #b3b3c6;
   font-size: 16px;
   line-height: 1.5;
-}
-
-.stackContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.stack {
-  padding: 6px 14px;
-  border-radius: 20px;
-  border: 1px solid #a855f7;
-  color: #c084fc;
-  font-size: 12px;
-  transition: 0.3s;
-  margin: 0;
+  margin-bottom: 30px;
 }
 
 .detailsContainer {
@@ -71,7 +57,7 @@
   padding: 12px 24px;
   border-radius: 30px;
   color: #a855f7;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   white-space: nowrap;
   text-decoration: none;

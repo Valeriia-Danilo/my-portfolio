@@ -13,7 +13,7 @@
 }
 
 .projects :global(.swiper-coverflow) {
-  height: 650px;
+  height: 600px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -29,7 +29,7 @@
 }
 
 .projects :global(.swiper-pagination) {
-  --swiper-pagination-bottom: 6px;
+  --swiper-pagination-bottom: 20px;
 }
 
 .projects :global(.swiper-pagination-bullet) {
@@ -59,10 +59,6 @@
     min-height: 80vh;
   }
 
-  .projects :global(.swiper-coverflow) {
-    height: 650px;
-  }
-
   .projects :global(.swiper-slide) {
     width: 350px;
     max-height: 400px;
@@ -71,11 +67,11 @@
 
 @media (min-width: 1440px) {
   .projects {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 
   .projects :global(.swiper-coverflow) {
-    height: 650px;
+    height: 600px;
   }
 }

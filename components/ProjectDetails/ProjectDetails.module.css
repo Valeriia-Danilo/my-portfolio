@@ -1,0 +1,143 @@
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 25px;
+  color: #c084fc;
+  background: rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.45);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 30px;
+  transition:
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.backButton svg {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.backButton:hover {
+  color: #ffffff;
+  background: rgba(168, 85, 247, 0.18);
+  border-color: rgba(168, 85, 247, 0.8);
+  box-shadow: 0 0 16px rgba(168, 85, 247, 0.45);
+}
+
+.image {
+  display: block;
+  max-width: 335px;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.title {
+  color: #c084fc;
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 0 0 14px rgba(168, 85, 247, 0.45);
+  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.likesContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #c084fc;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.likes svg {
+  filter: drop-shadow(0 0 8px #a855f7);
+}
+
+.description {
+  margin: 0;
+  color: #b3b3c6;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  display: inline-block;
+  margin: 0 0 12px;
+  color: #d8d8e7;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.stackContainer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.stack {
+  padding: 7px 14px;
+  border-radius: 24px;
+  border: 1px solid rgba(168, 85, 247, 0.65);
+  color: #c084fc;
+  font-size: 13px;
+  font-weight: 600;
+  background: rgba(168, 85, 247, 0.08);
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.githubButton,
+.liveButton {
+  height: 42px;
+  padding: 0 18px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  border: 1px solid rgba(168, 85, 247, 0.65);
+  background: #a855f7;
+  transition:
+    box-shadow 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.liveButton:hover,
+.githubButton:hover {
+  color: #c084fc;
+  background: rgba(168, 85, 247, 0.18);
+  border-color: rgba(168, 85, 247, 0.8);
+  box-shadow: 0 0 16px rgba(168, 85, 247, 0.45);
+}

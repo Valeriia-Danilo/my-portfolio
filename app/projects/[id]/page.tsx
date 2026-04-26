@@ -1,11 +1,23 @@
-import React from 'react';
+import ProjectsDetails from '@/components/ProjectDetails/ProjectDetails';
+import data from '@/public/data/data.json';
+import { Project } from '@/types/types';
 
-const ProjectsDetails = () => {
-  return (
-    <div>
-      <p>1</p>
-    </div>
-  );
+type Props = {
+  params: Promise<{
+    id: string;
+  }>;
 };
 
-export default ProjectsDetails;
+const DetailsPage = async ({ params }: Props) => {
+  const { id } = await params;
+
+  const project = data.find((p: Project) => p.id === id);
+
+  if (!project) {
+    return <div>Project not found</div>;
+  }
+
+  return <ProjectsDetails project={project} />;
+};
+
+export default DetailsPage;
