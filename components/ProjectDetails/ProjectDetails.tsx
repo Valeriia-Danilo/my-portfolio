@@ -20,50 +20,58 @@ const ProjectsDetails = ({ project }: Props) => {
         <FaArrowLeft />
         Back
       </Link>
-      <Image
-        src={project.image}
-        alt={project.title}
-        className={css.image}
-        width={400}
-        height={350}
-      />
-      <h3 className={css.title}>{project.title}</h3>
-      <div className={css.likesContainer}>
-        <p>Likes:</p>
-        {project.likes}
-        <FaHeart />
-      </div>
-      <p className={css.description}>{project.description}</p>
-      <p className={css.subtitle}>Tech stack:</p>
-      <ul className={css.stackContainer}>
-        {project.tags.map((tag, i) => {
-          return (
-            <li key={i} className={css.stack}>
-              <p>{tag}</p>
-            </li>
-          );
-        })}
-      </ul>
-      <div className={css.buttonsContainer}>
-        <a
-          href={project.live}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={css.liveButton}
-        >
-          <FaExternalLinkAlt />
-          Live Demo
-        </a>
+      <div className={css.imageInfoContainer}>
+        <Image
+          src={project.image}
+          alt={project.title}
+          className={css.image}
+          width={1200}
+          height={750}
+        />
+        <div className={css.infoContainer}>
+          <div className={css.titleLikeContainer}>
+            <h3 className={css.title}>{project.title}</h3>
+            <div className={css.likesContainer}>
+              <p>Likes:</p>
+              {project.likes}
+              <FaHeart />
+            </div>
+          </div>
+          <p className={css.description}>{project.description}</p>
 
-        <a
-          href={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={css.githubButton}
-        >
-          <FaGithub />
-          GitHub
-        </a>
+          <p className={css.subtitle}>Tech stack:</p>
+          <ul className={css.stackContainer}>
+            {project.tags.map((tag, i) => {
+              return (
+                <li key={i} className={css.stack}>
+                  <p>{tag}</p>
+                </li>
+              );
+            })}
+          </ul>
+
+          <div className={css.buttonsContainer}>
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={css.liveButton}
+            >
+              <FaExternalLinkAlt />
+              Live Demo
+            </a>
+
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={css.githubButton}
+            >
+              <FaGithub />
+              GitHub
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

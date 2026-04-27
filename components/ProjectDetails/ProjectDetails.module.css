@@ -45,6 +45,7 @@
   object-fit: cover;
   border-radius: 20px;
   margin-bottom: 30px;
+  border: 1px solid rgba(168, 85, 247, 0.18);
 }
 
 .title {
@@ -52,7 +53,6 @@
   font-size: 32px;
   font-weight: 700;
   text-shadow: 0 0 14px rgba(168, 85, 247, 0.45);
-  margin-bottom: 20px;
   margin-bottom: 30px;
 }
 
@@ -61,6 +61,7 @@
   align-items: center;
   gap: 10px;
   color: #c084fc;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -75,6 +76,7 @@
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .subtitle {
@@ -116,7 +118,7 @@
 .liveButton {
   height: 42px;
   padding: 0 18px;
-  border-radius: 999px;
+  border-radius: 24px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -127,6 +129,7 @@
   color: #ffffff;
   border: 1px solid rgba(168, 85, 247, 0.65);
   background: #a855f7;
+  white-space: nowrap;
   transition:
     box-shadow 0.3s ease,
     color 0.3s ease,
@@ -140,4 +143,107 @@
   background: rgba(168, 85, 247, 0.18);
   border-color: rgba(168, 85, 247, 0.8);
   box-shadow: 0 0 16px rgba(168, 85, 247, 0.45);
+}
+
+@media (min-width: 768px) {
+  .detailsContainer {
+    min-height: 80vh;
+  }
+
+  .image {
+    max-width: 450px;
+    max-height: 350px;
+    box-shadow:
+      0 8px 18px rgba(255, 255, 255, 0.08) inset,
+      0 20px 40px rgba(0, 0, 0, 0.55),
+      0 20px 50px rgba(168, 85, 247, 0.4);
+  }
+
+  .imageInfoContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+  }
+
+  .buttonsContainer {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .stackContainer {
+    margin-bottom: 60px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .stack {
+    padding: 7px 14px;
+    font-size: 16px;
+  }
+
+  .githubButton,
+  .liveButton {
+    height: 42px;
+    padding: 0 18px;
+    border-radius: 24px;
+    gap: 12px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .imageInfoContainer {
+    gap: 50px;
+  }
+
+  .image {
+    max-width: 700px;
+    max-height: 450px;
+  }
+
+  .title {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .stack {
+    padding: 7px 14px;
+    font-size: 16px;
+  }
+
+  .githubButton,
+  .liveButton {
+    height: 42px;
+    padding: 0 18px;
+    border-radius: 24px;
+    gap: 12px;
+    font-size: 16px;
+  }
+
+  .titleLikeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .likesContainer {
+    font-size: 20px;
+  }
 }

@@ -43,7 +43,7 @@
 
 @media (min-width: 768px) {
   .headerContainer {
-    padding: 32px;
+    padding: 32px 0;
   }
 
   .logo {
